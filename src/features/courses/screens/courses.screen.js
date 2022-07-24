@@ -1,7 +1,7 @@
 import React from "react";
 import { SafeAreaView, View, StatusBar, StyleSheet } from "react-native";
 import { Searchbar } from "react-native-paper";
-import { CourseInfo } from "../components/course-info.component";
+import { CourseInfoCard } from "../components/course-info-card.component";
 
 export const CoursesScreen = () => (
   <SafeAreaView style={styles.container}>
@@ -9,7 +9,7 @@ export const CoursesScreen = () => (
       <Searchbar />
     </View>
     <View style={styles.list}>
-      <CourseInfo />
+      <CourseInfoCard />
     </View>
   </SafeAreaView>
 );
