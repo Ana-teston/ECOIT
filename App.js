@@ -11,6 +11,8 @@ import {
   useFonts as useRoboto,
   Roboto_400Regular,
 } from "@expo-google-fonts/roboto";
+import Header from "./src/features/courses/components/header";
+import BannerInfo from "./src/features/courses/components/banner.component";
 
 export default function App() {
   const [oswaldLoaded] = useOswald({
@@ -27,6 +29,8 @@ export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
+        <Header />
+        <BannerInfo />
         <CoursesScreen />
       </ThemeProvider>
       <ExpoStatusBar style="auto" />

@@ -26,7 +26,7 @@ export const CourseInfoCard = ({ course = {} }) => {
   const ratingArray = Array.from(new Array(Math.floor(rating)));
 
   return (
-    <CourseCard elevation={2}>
+    <CourseCard elevation={0}>
       <CourseCardCover key={name} source={{ uri: photos[0] }} />
       <Section>
         <Title>{name}</Title>
